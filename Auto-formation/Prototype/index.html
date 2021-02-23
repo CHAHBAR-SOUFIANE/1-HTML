@@ -1,0 +1,312 @@
+<!DOCTYPE html><!-- for standar mode -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- Heading -->
+   <h1>Book-Store</h1>
+   <h2>This is our book store</h2>
+   <!-- paragraph ==> bolck element -->
+   <p>This is our book store, welcom</p>
+   <!--global aatributes like class -->
+   <p class="best">We have the best sale</p>
+   <!-- Attributes privé like src -->
+   <img src="" alt="">
+   <!-- Formatting elements like b u i del ins sup sub strong samll...  -->
+   <p>We have <b>all</b> kinds of <mark>books</mark></p>
+   <!-- link-Anchor Tag -->
+   <a href="google.com" title="Go to google">Google</a>
+   <a href="youtube.com" target="_blank" title="Go to youtube">Youtube</a>
+   <a href="test.html" target="_blank" title="Go to youtube">Page de test</a>
+   <a href="#best_book"  title="best book">bast book</a>
+   <a href="mailto:book_store@gmail.com" title="cotacter nous" >contact us</a>
+   <br><br><br><br>
+   <!-- Image and deal with paths -->
+   <img src="image/open-book.jpg" alt="book image" width="170px" height="170px">
+   <img src="" alt="book image">
+   <br><br><br><br>
+   <!-- list ul ol li dl dt dd  -->
+   <h2>la liste de books</h2>
+   <ul>
+     <li>HTML</li>
+     <li>CSS</li>
+     <li>Javascript</li>
+   </ul>
+   <ol>
+    <li value="5">HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+   </ol>
+   <dl>
+       <dt>HTML</dt>
+       <dd>img</dd>
+       <dd>links</dd>
+       <dd>liste</dd>
+       <dt>CSS</dt>
+       <dd>selector</dd>
+       <dd>id</dd>
+   </dl>
+   <br><br><br><br>
+   <!-- table ==> table thead tbody tfoot th tr td  colspan -->
+   <table border="1">
+       <thead>
+       <tr> 
+        <th>Titre</th>
+        <th>Taux</th>
+        <th>Prix</th>
+       </tr>
+        
+       </thead>
+       <tbody>
+       <tr>
+           <td>Livre 1</td>
+           <td>4.5</td>
+           <td>20§</td>
+       </tr>
+       <tr>
+           <td>Livre 2</td>
+           <td>4</td>
+           <td>15§</td>
+       </tr>
+       <tr>
+           <td>Livre 3</td>
+           <td>4</td>
+           <td>14§</td>
+       </tr>
+       </tbody>
+       <tfoot>
+           <tr>
+               <td colspan=2>Total</td>
+               <td>49§</td>
+           </tr>
+       </tfoot>
+   </table>
+   <br><br><br><br>
+  <!-- span and br and hr -->
+  <p>This is our book <span style="color:red;font-size:30px">store</span>,</br> welcom</p>
+  <hr>
+  <p>We have the best sale</p>
+  <br><br><br><br>
+  <!-- Div ==> container -->
+   <div style="background-color: bisque;">
+    <h2>la liste de books</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ul>
+    <ol>
+     <li value="5">HTML</li>
+     <li>CSS</li>
+     <li>Javascript</li>
+    </ol>
+   </div>
+   <br><br><br><br>
+   <!-- HTML Entities &copy; &lt; &gt; ...-->
+   <p>this &lt;p&gt; is our paragraph &copy;</p>
+   <br><br><br><br>
+   <!-- Semantic Elements -->
+    <header>Head of website</header>
+    <nav>link - link - link</nav>
+    <section>
+        <article></article>
+        <figure>
+            <figcaption></figcaption>
+        </figure>
+        <aside></aside>
+    </section>
+    <footer>footer</footer>
+    <br><br><br><br>
+    <!-- Audio -->
+    <audio controls  loop>
+        <source src="media/1.mp3" type="audio/mpeg">
+            your browser does not support Audio Tags
+    </audio>
+    <br><br><br><br>
+    <!-- Video -->   
+    <video src="media/1.mp4" type="video/mp4" controls poster="image/open-book.jpg" width="200px" height="200px" ></video>
+    <br><br><br><br>
+    <hr>
+    <!-- Forms -->   
+    <form action="" method="GET">
+        <div>
+            <label>Hello</label>
+            <input type="text" readonly value="Hello world" name="name">
+        </div>
+        <br>
+        <div>
+            <label>Hello</label>
+            <input type="text" disabled value="Hello world" name="name">
+        </div>
+        <br>
+        <div>
+            <label>name :</label>
+            <input type="text" required autofocus placeholder="Enter your name" name="name">
+        </div>
+        <br>
+        <div>
+            <label >email :</label>
+            <input type="email" required placeholder="Enter a valid email" value="xxxx@aaa.com" name="email">
+        </div>
+        <br>
+        <div>
+            <label>password :</label>
+            <input type="password" required placeholder="Enter valid passwoerd" minlength="8" maxlength="16" name="pass">
+        </div>
+        <br>
+        <div>
+            <Label>Color</Label>
+            <input type="color" name="color">
+        </div>
+        <br>
+        <div>
+            <Label>Rang</Label>
+            <input type="range" name="range" min="10" max="100" step="10" value="50">
+        </div>
+        <br>
+        <div>
+            <Label>Number</Label>
+            <input type="number" name="number" min="0" max="10" step="2" value="0">
+        </div>   
+        <hr>
+        <div>
+            <input type="checkbox" id="win" checked>
+            <label for="win">Windows</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lin">
+            <label for="lin">Linux</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Mac">
+            <label for="Mac">Mac</label>
+        </div>
+        <hr>
+        <div>
+            <input type="radio" id="win1" checked name="os">
+            <label for="win1">Windows</label>
+        </div>
+        <div>
+            <input type="radio" id="lin1" name="os">
+            <label for="lin1">Linux</label>
+        </div>
+        <div>
+            <input type="radio" id="Mac1" name="os">
+            <label for="Mac1">Mac</label>
+        </div>
+        <br>
+        <label for="mov">Choose a movie</label>
+        <select name="mov" id="mov" multiple>
+            <optgroup label="Action movies">
+                <option value="1" selected>Movies 1</option>
+                <option value="2">Movies 2</option>
+                <option value="3">Movies 3</option>
+            </optgroup>
+            <optgroup label="Sci-Fi movies">
+                <option value="4">Movies 4</option>
+                <option value="5">Movies 5</option>
+                <option value="6">Movies 6</option>
+            </optgroup>
+        </select>
+        <hr>
+        <div>
+            <textarea name="txtrv" id="txtrv" cols="30" rows="10" placeholder="text text"></textarea>
+        </div>
+        <hr>
+        <div>
+            <label>Upload</label>
+            <input type="file"> 
+        </div>
+        <hr>
+        <div>
+            <label>Search</label>
+            <input type="search"> 
+        </div>
+        <hr>
+        <div>
+            <label>Url</label>
+            <input type="url"> 
+        </div>
+        <hr>
+        <div>
+            <label>Date</label>
+            <input type="date"> 
+        </div>
+        <hr>
+        <div>
+            <label>Month</label>
+            <input type="month"> 
+        </div>
+        <hr>
+        <div>
+            <label>Time</label>
+            <input type="Time"> 
+        </div>
+        <hr>
+        <div>
+            <input type="reset" name="reset" value="reset">
+            <input type="submit" value="save" name="sub">
+        </div>
+        <hr>
+        <div>
+            <label>programming languages</label>
+            <input list="programming">
+            <datalist id="programming">
+                <option value="C#"></option>
+                <option value="Javascript"></option>
+                <option value="C"></option>
+                <option value="Pascal"></option>
+                <option value="Python"></option>
+            </datalist>
+        </div>
+    </form>
+    <hr>
+    <!-- pre code iFrame -->
+    <div>
+        <code>
+            var a = 12;
+            var b = 20;
+            
+            console.log("la somme est : "+ a + b);
+        </code>
+        <hr>
+        <pre>
+            var a = 12;
+            var b = 20;
+            
+            console.log("la somme est : "+ a + b);
+        </pre>
+    </div>
+    <div>
+        <iframe src="test.html" ></iframe>
+    </div>
+
+
+
+
+
+
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolore molestias quaerat alias, quos deleniti nostrum ipsum, atque cupiditate voluptas saepe veritatis illum magnam dolorem iusto sint beatae ducimus labore.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum maiores placeat iusto voluptas magni illum, sequi repellendus minus et sint rerum tempore animi aperiam consequuntur maxime commodi. Unde, ut.</p> 
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolore molestias quaerat alias, quos deleniti nostrum ipsum, atque cupiditate voluptas saepe veritatis illum magnam dolorem iusto sint beatae ducimus labore.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum maiores placeat iusto voluptas magni illum, sequi repellendus minus et sint rerum tempore animi aperiam consequuntur maxime commodi. Unde, ut.</p> 
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolore molestias quaerat alias, quos deleniti nostrum ipsum, atque cupiditate voluptas saepe veritatis illum magnam dolorem iusto sint beatae ducimus labore.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum maiores placeat iusto voluptas magni illum, sequi repellendus minus et sint rerum tempore animi aperiam consequuntur maxime commodi. Unde, ut.</p> 
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolore molestias quaerat alias, quos deleniti nostrum ipsum, atque cupiditate voluptas saepe veritatis illum magnam dolorem iusto sint beatae ducimus labore.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum maiores placeat iusto voluptas magni illum, sequi repellendus minus et sint rerum tempore animi aperiam consequuntur maxime commodi. Unde, ut.</p> 
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolore molestias quaerat alias, quos deleniti nostrum ipsum, atque cupiditate voluptas saepe veritatis illum magnam dolorem iusto sint beatae ducimus labore.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum maiores placeat iusto voluptas magni illum, sequi repellendus minus et sint rerum tempore animi aperiam consequuntur maxime commodi. Unde, ut.</p> 
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolore molestias quaerat alias, quos deleniti nostrum ipsum, atque cupiditate voluptas saepe veritatis illum magnam dolorem iusto sint beatae ducimus labore.</p>
+   <p id="best_book"><strong>Best book</strong> ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum maiores placeat iusto voluptas magni illum, sequi repellendus minus et sint rerum tempore animi aperiam consequuntur maxime commodi. Unde, ut.</p> 
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolore molestias quaerat alias, quos deleniti nostrum ipsum, atque cupiditate voluptas saepe veritatis illum magnam dolorem iusto sint beatae ducimus labore.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum maiores placeat iusto voluptas magni illum, sequi repellendus minus et sint rerum tempore animi aperiam consequuntur maxime commodi. Unde, ut.</p> 
+
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolore molestias quaerat alias, quos deleniti nostrum ipsum, atque cupiditate voluptas saepe veritatis illum magnam dolorem iusto sint beatae ducimus labore.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum maiores placeat iusto voluptas magni illum, sequi repellendus minus et sint rerum tempore animi aperiam consequuntur maxime commodi. Unde, ut.</p> 
+</body>
+
+</html>
